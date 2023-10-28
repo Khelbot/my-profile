@@ -109,7 +109,9 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 20px 70px;
+  margin: 70px;
+
+  margin-bottom: 40px;
 }
 
 @media (max-width: 576px) {
