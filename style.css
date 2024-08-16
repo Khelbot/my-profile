@@ -42,6 +42,13 @@ p {
 .nav-links a {
   margin: 20px;
 }
+.navbar {
+  padding: 0.5rem 1rem; /* Adjust padding if needed */
+}
+
+.navbar-brand {
+  font-size: 1.25rem; /* Adjust font size if needed */
+}
 
 .primary-link {
   border-radius: 4px;
