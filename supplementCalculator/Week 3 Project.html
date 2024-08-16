@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Supplement Calculator</title>
+    <style>
+      body {
+        background: linear-gradient(
+          126deg,
+          rgb(254, 249, 248) 0%,
+          rgb(251, 215, 229) 97%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        color: #45171d;
+        font-size: 45px;
+        font-weight: 550;
+        border: 4px solid white;
+        border-radius: 25px;
+        padding: 15px;
+        margin-top: 30px;
+        margin-right: 120px;
+        margin-bottom: 10px;
+        margin-left: 120px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 550;
+        color: #45171d;
+      }
+      .toned {
+        background-color: #fef7f7;
+        margin-left: 120px;
+        margin-right: 120px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        border-radius: 50px;
+      }
+
+      .toned p {
+        color: #45171d;
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .span {
+        font-size: smaller;
+      }
+
+      .one {
+        text-align: center;
+        border: 4px solid white;
+        border-radius: 25px;
+        padding: 30px;
+        margin-right: 120px;
+        margin-left: 120px;
+        color: #45171d;
+      }
+      .toxic {
+        color: #f5528e;
+      }
+
+      .result {
+        color: #017936;
+      }
+
+      a {
+        display: block;
+        line-height: 0%;
+        color: #ce957b;
+      }
+      button {
+        color: #45171d;
+        background-color: #f2e1c7;
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+        padding: 15px;
+        border: 1px solid #e0d2c2;
+        border-radius: 25px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #f2e1c7;
+        color: white;
+        border: 1px solid #ffebbb;
+      }
+
+      hr {
+        color: white;
+        line-height: 1px;
+      }
+
+      .two {
+        color: #45171d;
+        text-align: center;
+        font-size: x-small;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/933/original/supplement.jpeg?1676076517");
+          background-size: cover;
+          background-position: center;
+        }
+        .supplements {
+          box-shadow: none;
+          max-width: 90%; /* Responsive */
+          padding: 0;
+          display: flex;
+          justify-content: center; /* Center horizontally */
+          align-items: center;
+        }
+        .toned {
+          background-color: #f6eef1;
+        }
+        a {
+          color: white;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1><em>Supplement</em> Calculator</h1>
+    <div class="toned">
+      <h2>
+        <em
+          >"Access a tailored list of Vitamins and Minerals for your best
+          health."</em
+        >
+      </h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/933/original/supplement.jpeg?1676076517"
+        alt="supplement picture"
+        width="400"
+        class="supplements"
+      />
+      <p>"A ★★★★★ star rating all around!"- Emma J</p>
+    </div>
+
+    <p class="one">
+      You've heard that its
+      <strong
+        >neccessary to take supplements daily to substitute for the vitamins and
+        minerals that our foods fail to supply us with,</strong
+      >
+      as it once did. Countless studies have proven that our food sources lack
+      the equivalent nutrients it once had due to
+      <span class="result">over-cultivation </span> of farm soil. It is
+      imperative to our well being to now supplement nutrients, especially if
+      you have dietary restrictions, are of a mature age group or pregnant or
+      lactating. In common cases, many people end up taking too many supplemnts
+      or just plenty of the wrong ones, eventually making their body susceptible
+      to a plethora of ailments stemming from
+      <span class="toxic">vitamin toxicity</span>. Our new supplement calculator
+      will advise you of any toxic combinations between the number of
+      supplements you currently take or plan on taking and will even suggest
+      safer, healthier vitamins to take instead for effective nutritional
+      intake.
+    </p>
+
+    <br />
+    <br />
+    <button>CALCULATE SUPPLEMENTS</button>
+    <br />
+    <br />
+    <a
+      href="https://www.balancehormoneoklahoma.com/blog/the-importance-of-nutritional-supplements#:~:text=Nutritional%20supplements%20enhance%20your%20regular,a%20vitamin%20or%20mineral%20deficiency."
+    >
+      More on Supplements
+    </a>
+    <br />
+    <br />
+    <hr />
+    <br />
+
+    <p class="two">Coded by Khelsea Al-Arefi</p>
+    <script>
+
+      });
+      function calculateSupplements() {
+        let Name = prompt("What is your name?");
+        let Email = prompt(
+          "Please enter your email so we can send you your results 😊"
+        );
+        let Goal = prompt(
+          "Are you trying to gain weight, lose weight or just be your healthiest self?"
+        );
+        let heading = document.querySelector("h2");
+
+        if (
+          Goal === "gain" ||
+          Goal === "lose" ||
+          Goal === "Gain" ||
+          Goal === "Lose"
+        ) {
+          alert("Awesome! We sent some tips to your email 😌");
+        } else {
+          alert(
+            "Sounds good " + Name + ",Check your email for some health tips!🙂"
+          );
+        }
+      }
+      let calculateButton = document.querySelector("button");
+
+      calculateButton.addEventListener("click", calculateSupplements);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Clock</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>World Clock</h1>
+      <select name="city" id="city">
+        <option>Select a city</option>
+        <option value="current">My current location</option>
+        <option value="Africa/Cairo">Cairo 🇪🇬</option>
+        <option value="Europe/London">London 🇬🇧</option>
+        <option value="America/New_York">New York 🇺🇸</option>
+        <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+      </select>
+
+      <div id="cities">
+        <div class="city" id="milan">
+          <div>
+            <h2>Milan 🇮🇹</h2>
+            <div class="date"></div>
+          </div>
+          <div>
+            <div class="time"></div>
+          </div>
+        </div>
+
+        <div class="city" id="accra">
+          <div>
+            <h2>Accra 🇬🇭</h2>
+            <div class="date"></div>
+          </div>
+          <div>
+            <div class="time"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <script src="src/script.js"></script>
+    <footer>
+      This project was coded with 🧡 by <strong>Khelsea Al-Arefi</strong> and is
+      <a href="https://github.com/Khelbot/world-clock" target="_blank"
+        >open sourced on GitHub</a
+      >
+    </footer>
+  </body>
+</html>
