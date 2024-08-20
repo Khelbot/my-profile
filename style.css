@@ -48,7 +48,7 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  background: var(--primary-color);
+  background: rgb(7, 7, 54);
   box-shadow: var(--box-shadow);
   color: white;
 }
@@ -89,14 +89,15 @@ a:hover {
   text-align: center;
 }
 #contact-me {
-  font-size: 45px;
+  font-size: 40px;
   margin-top: 10px;
   margin-bottom: 0px;
+  color: black;
 }
 
 .email {
-  font-size: 24px;
-  color: var(--main-color);
+  font-size: 20px;
+  color: #4c4c4c;
 }
 
 .container {
