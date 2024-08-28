@@ -39,6 +39,8 @@ p {
   margin-top: 40px;
   justify-content: center;
 }
+.nav-links active {
+}
 .nav-links a {
   margin: 20px;
 }
