@@ -1,0 +1,579 @@
+:root {
+  --branding-color: #6b62ff;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
+  height: 100%; /* Ensure full height */
+  margin: 0;
+}
+
+.nav-container .container {
+  width: 100%;
+}
+
+nav .logo,
+.logo-small {
+  max-height: 50px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+
+nav li {
+  list-style: none;
+  line-height: 42px;
+  display: inline;
+  margin-left: 17px;
+  padding-bottom: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+nav a:visited {
+  text-decoration: none;
+  color: #272142;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+  text-decoration: none;
+}
+.navbar-toggler {
+  margin-right: 15px;
+}
+
+.overlay-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-text {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  position: absolute;
+  top: 50%; /* Adjusted for responsiveness */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center horizontally */
+  text-align: center;
+  width: auto;
+}
+
+.title-description {
+  font-size: 24px;
+  text-align: center;
+}
+
+.collection-container {
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center images horizontally */
+  margin: 130px 100px;
+  width: auto; /* Remove fixed width to allow flexibility */
+}
+
+.food-image-homepage {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.food-image-recipe-page {
+  border-radius: 12px;
+  width: 760px;
+}
+
+.recipe-title-page-1 {
+  line-height: 3;
+  text-align: start;
+
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+}
+.recipe-title-page-1:hover {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.recipe-title-page-1:visited {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
+.recipe-section {
+  max-width: 760px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700px;
+}
+
+.step-1,
+.step-2 {
+  color: #f65282;
+}
+
+.about-section {
+  display: flex; /* Ensure flexbox is enabled */
+  flex-wrap: wrap;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Optional: center vertically */
+  width: 100%;
+  margin-top: 80px;
+  margin-left: 220px;
+  padding-right: 100px;
+}
+.about-me-title {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait-column {
+  margin-top: 0;
+}
+#name {
+  font-size: 64px;
+  font-family: "Nunito", sans-serif;
+  padding-top: 50px;
+  margin: 0 auto;
+  font-weight: 700;
+  text-align: center;
+}
+
+#about-paragraph {
+  line-height: 2;
+  font-size: 18px;
+  margin: 20px auto; /* Center and add vertical spacing */
+  text-align: center; /* Center text */
+  max-width: 500px;
+}
+
+.follow-me {
+  font-size: 18px;
+  margin: 20px auto;
+  text-align: center;
+}
+.follow-section {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items */
+  margin: 0 auto;
+}
+.follow-me-thumbnail {
+  text-align: center;
+  padding: 0;
+  width: 14px;
+  margin: 10px; /* Ensure spacing is uniform */
+}
+.favorite-recipe {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 120px;
+  font-weight: bold;
+}
+.favorites-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow images to wrap onto new lines */
+  justify-content: center; /* Center images horizontally */
+  padding-bottom: 40px;
+  margin: 0 auto; /* Center container */
+  width: 100%; /* Ensure full width */
+}
+
+.favorites-title {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+.favorites-title:hover {
+  text-decoration: none;
+  color: var(--branding-color);
+}
+.favorites-title:visited {
+  color: black;
+}
+
+.favorites-image {
+  max-width: 300px; /* Ensure images fit */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  margin: 10px; /* Adjust spacing around each image */
+}
+
+.favorites-description {
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 60px;
+  margin-right: 65px;
+}
+
+.recipe-section {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the wrapper takes full viewport height */
+}
+
+.main-content {
+  flex: 1; /* Allow the main content to grow and take available space */
+}
+
+.col-6 .portrait2 {
+  position: relative;
+  max-width: 500px;
+  margin-bottom: 100px;
+}
+
+.address,
+.email,
+.phone {
+  color: #662eed;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.location-link,
+.email-link,
+.number {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+.location-link:hover,
+.email-link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.location-link:visited,
+.email-link:visited {
+  color: black;
+}
+
+.footer-container {
+  background-color: #f4effb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.tag-2 {
+  color: black;
+  font-family: "Nunito", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  padding-left: 0px;
+  padding-top: 35px;
+  margin: 0; /* Remove margin */
+}
+
+.footer-thumbnail {
+  width: 16px;
+  padding-top: 35px;
+  margin: 10px;
+}
+
+.footer-copyright {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  padding-top: 35px;
+  margin: auto;
+  width: 200px;
+  padding-right: 0px;
+}
+
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  right: 60px;
+  padding: 10px;
+  background-color: var(--branding-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 50%;
+  bottom: 130px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  /* Homepage */
+  .overlay {
+    height: 150px;
+    width: 100vw;
+  }
+
+  h1 {
+    font-size: 47px;
+  }
+  .food-image-homepage {
+    max-width: 320px;
+  }
+
+  .recipe-title-page-1 {
+    font-size: 24px;
+    text-align: center;
+    margin: auto;
+    line-height: 2;
+    margin-top: 10px;
+  }
+
+  .collection-container {
+    margin-bottom: 65px;
+    margin-top: 100px;
+  }
+
+  /* About */
+  .about-me-complete-section {
+    padding: 0 20px;
+  }
+  .about-section {
+    margin-left: auto;
+    padding: 0;
+  }
+
+  #name {
+    font-size: 40px;
+  }
+
+  .portrait {
+    max-width: 200px;
+    align-items: center;
+  }
+
+  .favorite-recipe {
+    margin-top: 50px;
+  }
+
+  .favorites-image {
+    max-width: 90%; /* Allow images to be more flexible on smaller screens */
+    margin: 10px auto; /* Center and space out images */
+  }
+
+  /* Recipe */
+  .recipe-section {
+    padding: 0 25px;
+  }
+
+  /* Contact */
+
+  .contact-information {
+    text-align: center;
+    padding: 0 25px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  /* Homepage */
+  .overlay {
+    height: 160px;
+    width: 100vw;
+    margin-bottom: 0px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .recipe-title-page-1 {
+    font-size: 26px;
+    text-align: center;
+    margin: auto;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  .collection-container {
+    margin-bottom: 65px;
+    margin-top: 110px;
+  }
+  /* About */
+  .about-section {
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .portrait {
+    max-width: 280px;
+  }
+  #name {
+    padding: 0;
+    font-size: 47px;
+  }
+  #about-paragraph {
+    margin: 0px; /* Center and add vertical spacing */
+  }
+  .favorites-container {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: center; /* Center the images */
+    margin: 0 auto;
+  }
+  .favorite-recipe {
+    margin-top: 50px;
+  }
+
+  .favorites-image {
+    flex: 0 1 30%; /* Allow the images to take up equal space */
+    margin: 10px; /* Center and space out images */
+  }
+
+  .favorites-description {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+  /* Recipe */
+  .recipe-section {
+    padding: 0 60px;
+  }
+  /* Contact */
+  .portrait2 {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  /* Homepage */
+  .overlay {
+    height: 200px;
+    width: 100vw;
+    margin-bottom: 0px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .title-description {
+    font-size: 20px;
+  }
+  /* About */
+  .about-section {
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .portrait {
+    max-width: 320px;
+  }
+  #name {
+    padding: 0;
+    font-size: 50px;
+    width: 340px;
+  }
+  #about-paragraph {
+    margin: 0px; /* Center and add vertical spacing */
+  }
+
+  .favorites-container {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: center; /* Center the images */
+    margin: 0 auto;
+  }
+  .favorite-recipe {
+    margin-top: 50px;
+  }
+
+  .favorites-image {
+    flex: 0 1 30%; /* Allow the images to take up equal space */
+    margin: 10px; /* Center and space out images */
+  }
+
+  .favorites-description {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+  /* Recipe */
+  /* Contact */
+
+  .contact-container {
+    padding-bottom: 200px;
+  }
+  .portrait2 {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  /* Homepage */
+  .overlay {
+    height: 265px;
+    width: 100vw;
+    margin-bottom: 0px;
+  }
+  h1 {
+    font-size: 72px;
+  }
+  /* About */
+  .about-section {
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .portrait {
+    max-width: 360px;
+  }
+  #name {
+    padding: 0;
+    font-size: 64px;
+    width: 430px;
+    text-align: start;
+  }
+  #about-paragraph {
+    margin: 0px; /* Center and add vertical spacing */
+  }
+  .favorites-container {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: center; /* Center the images */
+    margin: 0 auto;
+  }
+  .favorite-recipe {
+    margin-top: 50px;
+  }
+
+  .favorites-image {
+    flex: 0 1 30%; /* Allow the images to take up equal space */
+    margin: 10px; /* Center and space out images */
+  }
+
+  .favorites-description {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+  /* Recipe */
+  /* Contact */
+  .contact-container {
+    padding-bottom: 200px;
+  }
+}
